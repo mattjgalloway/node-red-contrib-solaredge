@@ -1,0 +1,29 @@
+{
+"name" : "node-red-contrib-solaredge",
+"version" : "0.1.0",
+"description" : "Node-RED node to interface with SolarEdge solar photovoltaic inverters",
+"dependencies": {
+  "https" : "^1.0.0",
+  "urllib" : "^2.13.0"
+},
+"engines":
+{
+  "node": ">=5.0.0"
+},
+"repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/mattjgalloway/node-red-contrib-solaredge.git"
+},
+"license": "MIT",
+"keywords": [ "node-red", "solaredge", "solar", "photovoltaic"],
+"node-red" : {
+  "nodes": {
+    "solaredge": "solaredge.js"
+  }
+},
+"author": {
+  "name": "Matt Galloway",
+  "email": "matt@galloway.me.uk",
+  "url": "www.galloway.me.uk"
+}
+}

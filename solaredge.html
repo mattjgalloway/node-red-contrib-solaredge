@@ -1,0 +1,59 @@
+<script type="text/javascript">
+  RED.nodes.registerType("solaredge-site", {
+    category: "config",
+    defaults: {
+      siteid: { value: "", required: true, validate: RED.validators.number() },
+      apikey: { value: "", required: true },
+    },
+    label: function() {
+      return "SolarEdge site " + this.siteid;
+    },
+  });
+</script>
+
+<script type="text/x-red" data-template-name="solaredge-site">
+    <div class="form-row">
+        <label for="node-config-input-siteid"><i class="fa fa-tag"></i> Site ID</label>
+        <input type="text" id="node-config-input-siteid" />
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-apikey"><i class="icon-tag"></i> API Key</label>
+        <input type="text" id="node-config-input-apikey">
+    </div>
+</script>
+
+<script type="text/javascript">
+  RED.nodes.registerType("solaredge", {
+    category: "input",
+    color: "#ffcc66",
+    defaults: {
+      site: { value:"", type: "solaredge-site", required: true },
+      interval: { value: 900, required: true, validate: RED.validators.number() },
+      command: { value:"", required: true },
+    },
+    inputs: 0,
+    outputs: 1,
+    icon: "solaredge.png",
+    label: function() {
+      return "SolarEdge";
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="solaredge">
+    <div class="form-row">
+        <label for="node-input-site"><i class="icon-bookmark"></i> Site</label>
+        <input type="text" id="node-input-site" />
+    </div>
+    <div class="form-row">
+        <label for="node-input-command"><i class="icon-bookmark"></i> Command</label>
+        <select id="node-input-command">
+            <option value="details">Details</option>
+            <option value="overview">Overview</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-interval"><i class="fa fa-heartbeat"></i> Interval (s)</label>
+        <input type="text" id="node-input-interval" />
+    </div>
+</script>
