@@ -54,7 +54,7 @@ module.exports = function(RED) {
 
                 res.on("end",function() {
                     try { msg.payload = JSON.parse(msg.payload); }
-                    catch(e) { node.warn(RED._("httpin.errors.json-error")); }
+                    catch(e) { node.warn("Invalid JSON returned"); }
                     node.send(msg);
                     node.status({});
                 });
@@ -62,7 +62,7 @@ module.exports = function(RED) {
 
             request.on("error", function(err) {
                 node.error(err);
-                // TODO
+                node.status({ fill: "red", shape: "dot", text: "error" });
             });
 
             request.end();
