@@ -2,6 +2,14 @@
 
 This is a node for Node-RED to grab data from your SolarEdge inverter. You'll need an API key and your site ID. Talk to your solar PV installer if you need these.
 
+## Installation
+
+In your Node-RED directory:
+
+```
+npm install node-red-contrib-solaredge
+```
+
 ## Usage
 
 This package adds 1 input node and 1 configuration node to Node-RED.
