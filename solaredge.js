@@ -49,7 +49,6 @@ module.exports = function(RED) {
 
                 res.on("data", function(chunk) {
                     msg.payload += chunk;
-                    node.log(chunk);
                 });
 
                 res.on("end",function() {
