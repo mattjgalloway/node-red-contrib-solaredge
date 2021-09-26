@@ -1,6 +1,6 @@
 {
-"name" : "node-red-contrib-solaredge",
-"version" : "0.1.0",
+"name" : "node-red-contrib-solaredge 2",
+"version" : "0.1.1",
 "description" : "Node-RED node to interface with SolarEdge solar photovoltaic inverters",
 "dependencies": {
   "https" : "^1.0.0",
@@ -22,8 +22,8 @@
   }
 },
 "author": {
-  "name": "Matt Galloway",
-  "email": "matt@galloway.me.uk",
+  "name": "Christoph Caina",
+  "email": "christoph@caina.de",
   "url": "www.galloway.me.uk"
 }
 }
