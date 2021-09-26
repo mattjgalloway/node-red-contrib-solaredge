@@ -10,7 +10,7 @@ This Repository is based on the files of Matt Galloway, but includes more API Co
 In your Node-RED directory:
 
 ```
-npm install node-red-contrib-solaredge
+npm install christophcaina/node-red-contrib-solaredge
 ```
 
 ## Usage
