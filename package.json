@@ -12,7 +12,7 @@
 },
 "repository" :
   { "type" : "git"
-  , "url" : "https://github.com/mattjgalloway/node-red-contrib-solaredge.git"
+  , "url" : "https://github.com/christophcaina/node-red-contrib-solaredge-2.git"
 },
 "license": "MIT",
 "keywords": [ "node-red", "solaredge", "solar", "photovoltaic"],
@@ -24,6 +24,6 @@
 "author": {
   "name": "Christoph Caina",
   "email": "christoph@caina.de",
-  "url": "www.galloway.me.uk"
+  "url": ""
 }
 }
