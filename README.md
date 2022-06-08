@@ -1,4 +1,4 @@
-# SolarEdge node for Node-RED (2)
+# SolarEdge node for Node-RED
 
 This is a node for Node-RED to grab data from your SolarEdge inverter.  
 You'll need an API key and your site ID. Talk to your solar PV installer if you need these.
@@ -10,7 +10,7 @@ This Repository is based on the files of Matt Galloway, but includes more API Co
 In your Node-RED directory:
 
 ```
-npm install christophcaina/node-red-contrib-solaredge-2
+npm install node-red-contrib-solaredge
 ```
 
 ## Usage
