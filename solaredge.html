@@ -3,8 +3,8 @@
     category: "config",
     defaults: {
       siteid: { value: "", required: true, validate: RED.validators.number() },
-      apikey: { value: "", required: true },
-    },
+      clientid: { value: "", required: true },
+      clientSecret : {  value:"", required: true, type: "password"  },
     label: function() {
       return "SolarEdge site " + this.siteid;
     },
